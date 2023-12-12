@@ -90,6 +90,10 @@ def get_arrangements(chars, sizes, memo):
         # Some splits won't be feasible, but those will quickly be terminated by one of the 'No solution if' checks above
         for s in range(len(sizes) + 1):
             res_left = get_arrangements(chars[:dot_i], sizes[:s], memo)
+
+            if res_left == 0:
+                continue
+
             res_right = get_arrangements(chars[start_of_right:], sizes[s:], memo)
             product_sum += res_left * res_right
 
