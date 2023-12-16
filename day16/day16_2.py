@@ -75,9 +75,6 @@ def main():
                     if char == '#':
                         sum += 1
 
-            if sum > max_sum:
-                print('debug')
-
             max_sum = max(max_sum, sum)
 
     answer = max_sum
