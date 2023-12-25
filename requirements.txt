@@ -1,3 +1,6 @@
 advent-of-code-data
 numpy
 sympy
+networkx
+matplotlib
+scipy
